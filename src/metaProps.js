@@ -1,13 +1,12 @@
-import React from 'react';
-import {string, array, oneOfType} from 'prop-types';
+import React, { PropTypes } from 'react';
 
 
 export const propTypes = {
-  data: oneOfType([string, array]).isRequired,
-  headers: array,
-  target: string,
-  separator: string,
-  filename: string
+  data: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
+  headers: PropTypes.array,
+  target: PropTypes.string,
+  separator: PropTypes.string,
+  filename: PropTypes.string
 };
 
 export const defaultProps = {
