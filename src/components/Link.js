@@ -35,6 +35,9 @@ class CSVLink extends React.Component {
 }
 
 CSVLink.propTypes = commonPropTypes;
-CSVLink.defaultProps = commonDefaultProps;
+CSVLink.defaultProps = Object.assign(
+  commonDefaultProps,
+  defaultProps
+);
 
 export default CSVLink;

@@ -155,7 +155,7 @@ var CSVLink = function (_React$Component) {
 }(_react2.default.Component);
 
 CSVLink.propTypes = _metaProps.propTypes;
-CSVLink.defaultProps = _metaProps.defaultProps;
+CSVLink.defaultProps = Object.assign(_metaProps.defaultProps, defaultProps);
 
 exports.default = CSVLink;
 },{"../core":4,"../metaProps":6,"react":37}],4:[function(require,module,exports){
