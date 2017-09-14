@@ -12,13 +12,7 @@ const defaultProps = {
  * @example ../../sample-site/csvdownload.example.md
  */
 class CSVDownload extends React.Component {
-
-  static defaultProps = Object.assign(
-    commonDefaultProps,
-    defaultProps
-  );
-
-  static propTypes = commonPropTypes;
+  // static propTypes = commonPropTypes;
 
   constructor(props) {
     super(props);
@@ -45,4 +39,9 @@ class CSVDownload extends React.Component {
   }
 }
 
+CSVDownload.propTypes = commonPropTypes;
+CSVDownload.defaultProps = Object.assign(
+  commonDefaultProps,
+  defaultProps
+);
 export default CSVDownload;

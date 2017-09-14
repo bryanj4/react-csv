@@ -10,8 +10,8 @@ import {
  */
 class CSVLink extends React.Component {
 
-  static defaultProps = commonDefaultProps;
-  static propTypes = commonPropTypes;
+  // static defaultProps = commonDefaultProps;
+  // static propTypes = commonPropTypes;
 
   constructor(props) {
     super(props);
@@ -33,5 +33,8 @@ class CSVLink extends React.Component {
     )
   }
 }
+
+CSVLink.propTypes = commonPropTypes;
+CSVLink.defaultProps = commonDefaultProps;
 
 export default CSVLink;
